@@ -259,8 +259,8 @@ fill:var(--accent-color);
    position: fixed;
    top: 0;
    left: 0;
-   width: 1600px;
-   height: 1024px;
+   right: 0;
+   bottom: 0;
    background: rgba(0, 0, 0, 0.2);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  }
@@ -272,16 +272,41 @@ fill:var(--accent-color);
 
  .modal{
    position: absolute;
+   padding: 40px;
    top: 50%;
    left: 50%;
-   min-width: 528px;
-   min-height: 581px;
+   max-width: 500px;
    background: #FFFFFF;
-
-
    transform: translate(-50%, -50%);
-   padding: 221px, 536px;
+   width: 528px;
+   height: 581px;
  }
+
+.button-modal{
+   display: flex; 
+   padding: 0;
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   width: 30px;
+   height: 30px;
+   border-radius: 100%;
+   justify-content: center;
+   align-items: center;
+   background: #FFFFFF;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   box-sizing: border-box;
+
+}
+
+.modal-icon{
+
+ width: 18px;
+ height: 18px;
+ color: #000000;
+}
+
+
 
 /* Организхационные моменты */
 
